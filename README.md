@@ -20,7 +20,7 @@ You can use
     ```source setupOnUbuntu.sh``` 
 to run this file.
 
-
+ ![image](https://github.com/swbsin/SetFabricOnUbuntu/master/result.PNG)
 
 ad:
     zju14级小硕，浙大blockchain项目组攻坚者与技术核心，明年3月份毕业，求一份与区块链相关的工作:)
