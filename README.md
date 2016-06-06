@@ -23,6 +23,6 @@ to run this file.
  ![image](https://github.com/swbsin/SetFabricOnUbuntu/blob/master/result.PNG?raw=true)
 
 ad:
-    zju14级小硕，浙大blockchain项目组攻坚者与技术核心，明年3月份毕业，求一份与区块链相关的工作:)
+    zju14级小硕，浙大blockchain项目组技术主力，明年3月份毕业，求一份与区块链相关的工作:)
     对以太坊有一定积累，解决了如何在以太坊私链的多节点上部署智能合约及自动化部署节点，并实现对节点的监控，现长期关注hyperledger项目。
     联系邮箱：swbsin@163.com
