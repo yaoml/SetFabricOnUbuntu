@@ -14,7 +14,7 @@ This script install the follow prerequisites:
     RocksDB version 4.1 and its dependencies
     Docker
     Pip
-    Set the maximum number of open files to 65535 or greater for your OS
+    Set the maximum number of open files to 65535
 
 You can use 
     ```source setupOnUbuntu.sh``` 
