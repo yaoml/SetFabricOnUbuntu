@@ -6,11 +6,10 @@ used to set up on Ubuntu, similar to devenv/setup.sh which does the
 same for Vagrant.
 See https://github.com/hyperledger/fabric/blob/master/docs/dev-setup/install.md
 
-```
 You can use 
-    source setupOnUbuntu.sh 
+    ```source setupOnUbuntu.sh``` 
 to run this file.
-```
+
 
 
 
