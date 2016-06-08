@@ -16,15 +16,13 @@ This script install the follow prerequisites:
     Pip
     Set the maximum number of open files to 65535
 
-You can use \<br> 
-    ```
+You can use 
+```
     chmod +x setupOnUbuntu.sh
-    ```
-    \<br> 
-    ```
+```
+```
     source setupOnUbuntu.sh
-    ```
-    \<br> 
+```
 to run this file.
 
  ![image](https://github.com/swbsin/SetFabricOnUbuntu/blob/master/result.PNG?raw=true)
