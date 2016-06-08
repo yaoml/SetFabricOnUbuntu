@@ -19,8 +19,10 @@ This script install the follow prerequisites:
 You can use 
     ```
     chmod +x setupOnUbuntu.sh
+    ```
+    ```
     source setupOnUbuntu.sh
-    ``` 
+    ```
 to run this file.
 
  ![image](https://github.com/swbsin/SetFabricOnUbuntu/blob/master/result.PNG?raw=true)
