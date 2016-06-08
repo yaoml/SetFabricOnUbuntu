@@ -16,10 +16,11 @@ This script install the follow prerequisites:
     Pip
     Set the maximum number of open files to 65535
 
-You can use 
+Use 
 ```
     chmod +x setupOnUbuntu.sh
 ```
+add
 ```
     source setupOnUbuntu.sh
 ```
