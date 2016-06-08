@@ -17,7 +17,10 @@ This script install the follow prerequisites:
     Set the maximum number of open files to 65535
 
 You can use 
-    ```source setupOnUbuntu.sh``` 
+    ```
+    chmod +x setupOnUbuntu.sh
+    source setupOnUbuntu.sh
+    ``` 
 to run this file.
 
  ![image](https://github.com/swbsin/SetFabricOnUbuntu/blob/master/result.PNG?raw=true)
