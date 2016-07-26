@@ -87,4 +87,4 @@ git clone https://github.com/hyperledger/fabric.git
 
 
 cd fabric/
-make peer unit-test
+make
