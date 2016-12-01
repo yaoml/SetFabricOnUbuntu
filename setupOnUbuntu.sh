@@ -21,26 +21,24 @@ apt-get upgrade gcc g++ -y
 ulimit -n 65535
 
 #TODO: should really just open a few ports..
-iptables -I INPUT 1 -j ACCEPT
+# iptables -I INPUT 1 -j ACCEPT
 sysctl vm.overcommit_memory=1
 
 
 ##################
 # Install Docker
-mkdir $HOME/tmp
-cd /tmp
 
 wget -qO- https://get.docker.com/ | sh
-
+service docker stop
 #TODO: Install on boot
-nohup docker daemon -g /data/docker -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock&
+nohup docker daemon -g /data/docker -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock &
 
 ##################
 # Install Golang
 curl -O https://storage.googleapis.com/golang/go1.6.2.linux-amd64.tar.gz
 tar -C /usr/local -xzf go1.6.2.linux-amd64.tar.gz
 
-mkdir -p ~/go; echo "" >> ~/.bashrc
+mkdir -p ~/go
 cat >> ~/.bashrc <<EOF
       export GOPATH=$HOME/go
       export PATH=$PATH:$HOME/go/bin:/usr/local/go/bin
@@ -49,13 +47,13 @@ EOF
 source ~/.bashrc
 echo `go version`
 
-rm go1.6.2.linux-amd64.tar.gz
+# rm go1.6.2.linux-amd64.tar.gz
 
 ################
 #ROCKSDB BUILD
 
 apt-get install -y libsnappy-dev zlib1g-dev libbz2-dev
-cd /tmp
+# cd /tmp
 git clone https://github.com/facebook/rocksdb.git
 cd rocksdb
 git checkout v4.1
@@ -65,13 +63,12 @@ INSTALL_PATH=/usr make install-shared && ldconfig
 
 ################
 #Install Pyenv Python
-cd /tmp
-sudo apt-get install libc6-dev gcc git -y
-sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm
+# cd /tmp
+apt-get install libc6-dev gcc git -y
+apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm
 # PIP
-yum install python-setuptools
-curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
-python get-pip.py
+# yum install python-setuptools
+apt-get install python-pip python-dev
 pip install --upgrade pip
 pip install behave nose docker-compose
 
